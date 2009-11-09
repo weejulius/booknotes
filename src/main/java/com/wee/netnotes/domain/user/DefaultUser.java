@@ -13,7 +13,7 @@ public class DefaultUser implements User {
     private String name;
     private String password;
 
-    public DefaultUser(String name, String password) {
+    public DefaultUser(final String name, final String password) {
         this.name = name;
         UserValidator.validateName(name);
         this.password = password;

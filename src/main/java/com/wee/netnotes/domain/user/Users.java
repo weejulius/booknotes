@@ -1,7 +1,5 @@
 package com.wee.netnotes.domain.user;
 
-import com.wee.netnotes.domain.user.User;
-
 /**
  * Created by IntelliJ IDEA.
  * User: wee
@@ -9,8 +7,12 @@ import com.wee.netnotes.domain.user.User;
  * Time: 9:07:25 AM
  * To change this template use File | Settings | File Templates.
  */
-public class Users {
-    public static User registry(String name, String password) {
-        return new DefaultUser(name,password);
+public final class Users {
+    protected Users() {
+        throw new UnsupportedOperationException();
+    }
+
+    public static User registry(final String name, final String password) {
+        return new DefaultUser(name, password);
     }
 }
