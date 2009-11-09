@@ -8,8 +8,8 @@ package com.wee.netnotes.domain.user;
  * To change this template use File | Settings | File Templates.
  */
 public class DefaultUser implements User {
-    private String name;
-    private String password;
+    private final String name;
+    private final String password;
 
     public DefaultUser(final String name, final String password) {
         this.name = name;
