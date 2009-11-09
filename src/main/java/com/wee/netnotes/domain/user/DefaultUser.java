@@ -1,4 +1,4 @@
-package com.wee.netnotes.user;
+package com.wee.netnotes.domain.user;
 
 import com.wee.netnotes.domain.user.User;
 
@@ -12,16 +12,16 @@ import com.wee.netnotes.domain.user.User;
 public class DefaultUser implements User {
     private String name;
     private String password;
+
     public DefaultUser(String name, String password) {
-        this.name=name;
-        if(nullOrBlank(name)){
-            throw new IllegalArgumentException("User name can not be empty");
-        }
-        this.password=password;
+        this.name = name;
+        UserValidator.validateName(name);
+        this.password = password;
+        UserValidator.validatePassword(password);
     }
 
-    private boolean nullOrBlank(String name) {
-        return name==null||"".equals(name.trim());
-    }
+
+
+
 
 }
