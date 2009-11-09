@@ -8,4 +8,7 @@ package com.wee.netnotes.domain.user;
  * To change this template use File | Settings | File Templates.
  */
 public interface User {
+    String name();
+
+    String password();
 }

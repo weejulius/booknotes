@@ -1,7 +1,5 @@
 package com.wee.netnotes.domain.user;
 
-import com.wee.netnotes.domain.user.User;
-
 /**
  * Created by IntelliJ IDEA.
  * User: wee
@@ -21,7 +19,13 @@ public class DefaultUser implements User {
     }
 
 
+    @Override
+    public String password() {
+        return password;
+    }
 
-
-
+    @Override
+    public String name() {
+        return name;
+    }
 }

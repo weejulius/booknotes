@@ -69,7 +69,7 @@ Finally, it is worth reading the documentation.
 
         <!-- Checks for Javadoc comments. -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
-        <module name="JavadocMethod"/>
+       <!-- <module name="JavadocMethod"/>
         <module name="JavadocType">
             <property name="scope" value="public"/>
         </module>
@@ -78,7 +78,7 @@ Finally, it is worth reading the documentation.
         </module>
         <module name="JavadocStyle">
             <property name="checkFirstSentence" value="false"/>
-        </module>
+        </module>  -->
 
         <!-- Checks for Naming Conventions. -->
         <!-- See http://checkstyle.sf.net/config_naming.html -->
@@ -205,7 +205,7 @@ TYPE_EXTENSION_AND, WILDCARD_TYPE"/>
         <!-- See http://checkstyle.sf.net/config_design.html -->
         <module name="DesignForExtension"/>
         <module name="FinalClass"/>
-        <module name="HideUtilityClassConstructor"/>
+        <!--<module name="HideUtilityClassConstructor"/>-->
         <module name="InterfaceIsType"/>
         <module name="VisibilityModifier"/>
 
