@@ -20,12 +20,12 @@ public class DefaultUser implements User {
 
 
     @Override
-    public String password() {
+    public final String password() {
         return password;
     }
 
     @Override
-    public String name() {
+    public final String name() {
         return name;
     }
 }
