@@ -1,4 +1,4 @@
-package com.wee.netnotes.user;
+package com.wee.netnotes.domain.user;
 
 import com.wee.netnotes.domain.user.Users;
 import org.junit.Test;
