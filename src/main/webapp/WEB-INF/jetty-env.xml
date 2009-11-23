@@ -1,0 +1,15 @@
+<?xml version="1.0"?><!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
+<Configure class="org.mortbay.jetty.webapp.WebAppContext">
+	<New id="DSTest" class="org.mortbay.jetty.plus.naming.Resource">
+		<Arg></Arg>
+		<Arg>db/mssql</Arg>
+		<Arg>
+			<New class="com.mchange.v2.c3p0.ComboPooledDataSource">
+				<Set name="driverClass">net.sourceforge.jtds.jdbc.Driver</Set>
+				<Set name="jdbcUrl">jdbc:jtds:sqlserver://localhost/20091</Set>
+				<Set name="user">sa</Set>
+				<Set name="password">julius</Set>
+			</New>
+		</Arg>
+	</New>
+</Configure>

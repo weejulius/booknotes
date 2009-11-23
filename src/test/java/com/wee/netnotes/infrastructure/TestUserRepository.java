@@ -40,7 +40,7 @@ public class TestUserRepository {
     }
 
     @Test(expected = UserRepositoryException.class)
-    public void testStoreExistUser() {
+    public void testStoreExistenceUser() {
         String[] user = { "weejud", "password" };
         String[][] users = { user, user };
 
